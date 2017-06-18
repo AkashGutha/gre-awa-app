@@ -1,4 +1,6 @@
-exports.issues = `As people rely more and more on technology to solve problems, the ability of humans to think for themselves will surely deteriorate.
+export function getIssues() {
+
+  let issues = `As people rely more and more on technology to solve problems, the ability of humans to think for themselves will surely deteriorate.
 
 Write a response in which you discuss the extent to which you agree or disagree with the statement and explain your reasoning for the position you take. In developing and supporting your position, you should consider ways in which the statement might or might not hold true and explain how these considerations shape your position.
 
@@ -643,3 +645,5 @@ Write a response in which you discuss which view more closely aligns with your o
 The best way to solve environmental problems caused by consumer-generated waste is for towns and cities to impose strict limits on the amount of trash they will accept from each household.
 
 Write a response in which you discuss the extent to which you agree or disagree with the claim. In developing and supporting your position, be sure to address the most compelling reasons and/or examples that could be used to challenge your position.`;
+  return issues;
+}

@@ -14,10 +14,15 @@
 
 
 <ion-content padding>
-  <ion-searchbar (ionInput)="getItems(topics)"></ion-searchbar>
-  <ion-list>
-      <ion-item *ngFor="let topic of topics">
-          {{ topic }}
-      </ion-item>
-  </ion-list>
+  <button ion-button block default (click)="GenerateRandomIssue()">
+    Get a Random Issue Topic
+  </button>
+  <button ion-button block default (click)="GenerateRandomArgument()">
+    Get a Random Argument Topic
+  </button>
+
+  <ion-card padding>
+    <div [innerHTML]="result"></div>
+  </ion-card>
+
 </ion-content>
